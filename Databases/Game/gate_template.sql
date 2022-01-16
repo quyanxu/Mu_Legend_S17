@@ -1,7 +1,7 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : Localhost
+ Source Server         : localhost_3306
  Source Server Type    : MySQL
  Source Server Version : 80023
  Source Host           : localhost:3306
@@ -11,7 +11,7 @@
  Target Server Version : 80023
  File Encoding         : 65001
 
- Date: 23/04/2021 03:01:41
+ Date: 14/01/2022 22:20:52
 */
 
 SET NAMES utf8mb4;
@@ -21,24 +21,25 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- Table structure for gate_template
 -- ----------------------------
 DROP TABLE IF EXISTS `gate_template`;
-CREATE TABLE `gate_template`  (
-  `id` smallint UNSIGNED NOT NULL,
-  `flag` tinyint UNSIGNED NULL DEFAULT NULL,
-  `world` smallint UNSIGNED NOT NULL,
+CREATE TABLE `gate_template` (
+  `id` smallint unsigned NOT NULL,
+  `flag` tinyint unsigned DEFAULT NULL,
+  `world` smallint unsigned NOT NULL,
   `x1` smallint NOT NULL,
   `y1` smallint NOT NULL,
   `x2` smallint NOT NULL,
   `y2` smallint NOT NULL,
-  `target_id` smallint UNSIGNED NOT NULL,
-  `direction` tinyint NOT NULL DEFAULT 0,
-  `min_level` smallint NOT NULL DEFAULT 0,
-  `description` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `target_id` smallint unsigned NOT NULL,
+  `direction` tinyint NOT NULL DEFAULT '0',
+  `min_level` smallint NOT NULL DEFAULT '0',
+  `description` varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of gate_template
 -- ----------------------------
+BEGIN;
 INSERT INTO `gate_template` VALUES (1, 1, 0, 121, 232, 123, 233, 2, 0, 20, 'Entrance to Dungeon');
 INSERT INTO `gate_template` VALUES (2, 2, 1, 107, 247, 110, 247, 0, 1, 20, NULL);
 INSERT INTO `gate_template` VALUES (3, 1, 1, 108, 248, 109, 248, 4, 0, 0, 'Entrance to Lorencia');
@@ -663,6 +664,28 @@ INSERT INTO `gate_template` VALUES (644, 1, 33, 115, 112, 119, 113, 645, 0, 1130
 INSERT INTO `gate_template` VALUES (645, 2, 134, 122, 29, 128, 31, 0, 0, 1130, 'Aida Gray');
 INSERT INTO `gate_template` VALUES (646, 1, 134, 124, 25, 127, 26, 647, 0, 1130, 'Aida Gray');
 INSERT INTO `gate_template` VALUES (647, 2, 33, 115, 108, 120, 109, 0, 0, 1130, 'Aida Gray');
+INSERT INTO `gate_template` VALUES (648, 0, 135, 124, 18, 129, 17, 0, 0, 700, NULL);
+INSERT INTO `gate_template` VALUES (649, 1, 33, 81, 17, 83, 17, 650, 0, 700, NULL);
+INSERT INTO `gate_template` VALUES (650, 2, 135, 124, 18, 129, 17, 0, 0, 700, NULL);
+INSERT INTO `gate_template` VALUES (651, 1, 135, 113, 63, 116, 63, 652, 0, 700, NULL);
+INSERT INTO `gate_template` VALUES (652, 2, 135, 103, 166, 106, 167, 0, 0, 700, NULL);
+INSERT INTO `gate_template` VALUES (653, 1, 135, 98, 157, 98, 159, 654, 0, 700, NULL);
+INSERT INTO `gate_template` VALUES (654, 2, 135, 112, 56, 118, 58, 0, 0, 700, NULL);
+INSERT INTO `gate_template` VALUES (655, 1, 135, 137, 63, 139, 63, 656, 0, 700, NULL);
+INSERT INTO `gate_template` VALUES (656, 2, 135, 210, 132, 211, 136, 0, 0, 700, NULL);
+INSERT INTO `gate_template` VALUES (657, 1, 135, 200, 139, 202, 140, 658, 0, 700, NULL);
+INSERT INTO `gate_template` VALUES (658, 2, 135, 136, 59, 142, 56, 0, 0, 700, NULL);
+INSERT INTO `gate_template` VALUES (659, 0, 136, 124, 19, 129, 17, 0, 0, 1160, NULL);
+INSERT INTO `gate_template` VALUES (660, 1, 33, 211, 237, 213, 241, 661, 0, 1160, NULL);
+INSERT INTO `gate_template` VALUES (661, 2, 136, 124, 19, 129, 17, 0, 0, 1160, NULL);
+INSERT INTO `gate_template` VALUES (662, 1, 136, 113, 63, 116, 63, 663, 0, 1160, NULL);
+INSERT INTO `gate_template` VALUES (663, 2, 136, 103, 166, 106, 167, 0, 0, 1160, NULL);
+INSERT INTO `gate_template` VALUES (664, 1, 136, 98, 157, 98, 159, 665, 0, 1160, NULL);
+INSERT INTO `gate_template` VALUES (665, 2, 136, 112, 56, 118, 58, 0, 0, 1160, NULL);
+INSERT INTO `gate_template` VALUES (666, 1, 136, 137, 63, 139, 63, 667, 0, 1160, NULL);
+INSERT INTO `gate_template` VALUES (667, 2, 136, 210, 132, 211, 136, 0, 0, 1160, NULL);
+INSERT INTO `gate_template` VALUES (668, 1, 136, 200, 139, 202, 140, 669, 0, 1160, NULL);
+INSERT INTO `gate_template` VALUES (669, 2, 136, 136, 59, 140, 58, 0, 0, 1160, NULL);
 INSERT INTO `gate_template` VALUES (1000, 0, 40, 224, 18, 235, 33, 0, 0, 0, '');
 INSERT INTO `gate_template` VALUES (1001, 0, 200, 133, 91, 141, 99, 0, 0, 0, '');
 INSERT INTO `gate_template` VALUES (1002, 0, 201, 101, 64, 101, 64, 0, 0, 0, 'Arena Ground 1 - 1');
@@ -679,5 +702,6 @@ INSERT INTO `gate_template` VALUES (1012, 0, 206, 220, 20, 220, 20, 0, 0, 0, 'Ar
 INSERT INTO `gate_template` VALUES (1013, 0, 206, 220, 20, 220, 20, 0, 0, 0, 'Arena Ground 6 - 2');
 INSERT INTO `gate_template` VALUES (10000, 0, 300, 107, 247, 110, 247, 0, 0, 0, 'Instanced Dungeon');
 INSERT INTO `gate_template` VALUES (10001, 0, 207, 125, 126, 130, 130, 0, 0, 10, '');
+COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;
