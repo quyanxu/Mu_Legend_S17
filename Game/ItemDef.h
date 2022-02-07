@@ -110,7 +110,7 @@ namespace SECROMICON
 
 #define MAX_PET_LEVEL				70
 
-namespace ItemKind1
+namespace ItemKind1			//IGCN XML KindA="XX"
 {
 	enum
 	{
@@ -120,6 +120,9 @@ namespace ItemKind1
 		RING = 4,
 		WINGS = 6,
 
+		//BUFS = 7, 			Seal of ..., Talisman of ..., Bless of Light...
+		//MITHRIL = 8,			Mithril Fragment, Mithril, Mithril Fragment Bunch, Ertel of Radiance
+		
 		JEWEL = 9,
 		SKILL = 10,
 		EVENT_INVENTORY = 11,
@@ -131,10 +134,15 @@ namespace ItemKind1
 		EARRING = 19,
 		GUARDIAN_MOUNT = 20,
 		SOUL_CONVERTER = 21,
+
+		MASTERY_TALISMAN = 23,
+		MASTERY_TALISMAN_FRAGMENT = 24,
+		PENTAGRAM = 25,
+		ERTEL = 26,
 	};
 };
 
-namespace ItemKind
+namespace ItemKind   //IGCN XML  KindB="XX"
 {
 	enum
 	{
@@ -160,6 +168,8 @@ namespace ItemKind
 		GLOVES = 19,
 		BOOTS = 20,
 
+		//WINGS_TALISMAN = 21,
+
 		MINI_WINGS = 22,
 		WINGS_LVL_1 = 23,
 		WINGS_LVL_2 = 24,
@@ -182,7 +192,7 @@ namespace ItemKind
 
 		SKILL_SCROLL_1 = 36,
 		SKILL_PARCHMENT = 37,
-		SKILL_ORB = 38,
+		SKILL_ORB_1 = 38,
 		SKILL_SCROLL_2 = 39,
 		SEED = 40,
 		SPHERE = 41,
@@ -231,12 +241,13 @@ namespace ItemKind
 		MASTERY_ERRTEL_INTEGRITY = 87,
 		MASTERY_ERRTEL_DIVINITY = 88,
 		
-		MAGIK_BOOK = 89,
-		MAGIK_ORB = 90,
+		MAGIC_BOOK = 89,
+		MAGIC_ORB = 90,
+		SKILL_ORB_2 =91,
 	};
 };
 
-namespace ItemKind3
+namespace ItemKind3    //IGCN xml Type = "X"
 {
 	enum
 	{

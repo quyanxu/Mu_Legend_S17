@@ -3342,7 +3342,7 @@ void Item::CalculateOptionValue(item_template const* pItemInfo)
 		this->AddOptionData(ItemOption::DARK_HORSE_DEFENSE, 2 * this->pet_dark.level + 5);
 	}
 
-	if (this->GetItem() == ITEMGET(13, 20))
+	if (this->GetItem() == ITEMGET(13, 20))			//Wizards Ring
 	{
 		switch (this->GetLevel())
 		{
@@ -3355,7 +3355,7 @@ void Item::CalculateOptionValue(item_template const* pItemInfo)
 		}
 	}
 
-	if (this->GetItem() == ITEMGET(13, 107))
+	if (this->GetItem() == ITEMGET(13, 107))			//Lethal Wizard's Ring
 	{
 		this->AddOptionData(ItemOption::WIZARDRY_DAMAGE_MUL, 15);
 		this->AddOptionData(ItemOption::PHYSICAL_DAMAGE_MUL, 15);
