@@ -44,7 +44,7 @@ namespace CommandNormal
 		{	"offattack",	&ChatHandler::CommandOffAttack,		AUTHORITY_CODE_NORMAL,			ADMIN_FLAG_NONE,		"", nullptr},
 		{	"pkpoints",		&ChatHandler::CommandPKPoints,		AUTHORITY_CODE_NORMAL,			ADMIN_FLAG_NONE,		"", nullptr},
 		{	"gold",			&ChatHandler::CommandGold,			AUTHORITY_CODE_NORMAL,			ADMIN_FLAG_NONE,		"", nullptr},
-		{ "errtel", &ChatHandler::CommandErrtel, AUTHORITY_CODE_NORMAL, ADMIN_FLAG_NONE, "/errtel #type #element #r1 #lv1 #r2 #lv2 #r3 #lv3", nullptr },
+		{ 	"errtel", 		&ChatHandler::CommandErrtel, 		AUTHORITY_CODE_NORMAL, 			ADMIN_FLAG_NONE, 		"/errtel #type #element #r1 #lv1 #r2 #lv2 #r3 #lv3", nullptr },
 
 		{	nullptr,		nullptr,							0,								ADMIN_FLAG_NONE,		"",				nullptr}
 	};
@@ -79,7 +79,7 @@ namespace CommandAdmin
 		{	"remove",		&ChatHandler::CommandItemRemove,			AUTHORITY_CODE_ADMINISTRATOR,	ADMIN_FLAG_ITEM_EVENT,	".item remove #owner",																nullptr},
 		{	"pentagram",	&ChatHandler::CommandAdminItemPentagram,	AUTHORITY_CODE_ADMINISTRATOR,	ADMIN_FLAG_ITEM,		".item pentagram #type #index #level #sock1 #sock2 #sock3 #sock4 #sock5 #sockbonus",																nullptr},
 		{	"gremory",		&ChatHandler::CommandItemGremory,			AUTHORITY_CODE_ADMINISTRATOR,	ADMIN_FLAG_ITEM,		".item gremory #count #type #index #lvl #dur #skill #luck #opt #exe #anc",				nullptr},
-		{ "wing", &ChatHandler::CommandItemWing, AUTHORITY_CODE_ADMINISTRATOR, ADMIN_FLAG_ITEM, ".item wing #index #lvl #skc1 #skc2 #skc3 #skc4 #skc5 #skcb", nullptr },
+		{ 	"wing", 		&ChatHandler::CommandItemWing, 				AUTHORITY_CODE_ADMINISTRATOR, 	ADMIN_FLAG_ITEM, 		".item wing #index #lvl #skc1 #skc2 #skc3 #skc4 #skc5 #skcb", nullptr },
 		{	nullptr,		nullptr,		0,	ADMIN_FLAG_NONE,		"",				nullptr}
 	};
 

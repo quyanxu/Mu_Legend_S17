@@ -1,7 +1,7 @@
 // Misc Data
 //=============================================
 //Id	Exp	Max	PK	PKLvl	Remove
-//		Players			ElfBuff
+//		Players			    ElfBuff
 //=============================================
 0
 1	1	15	0	7	0

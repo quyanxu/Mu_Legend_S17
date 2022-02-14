@@ -20,7 +20,7 @@ end
 2
 	0		1		900		// Primera Batalla
 	1		1		900		// Segunda Batalla
-	2		1		1200		// Tercer Batalla
+	2		1		1200	// Tercer Batalla
 end
 
 
@@ -57,7 +57,7 @@ end
 	0		0		0		// Ninguna
 	1		1		5		// Idle
 	2		1		10		// Notificacion
-	3		1		1200		// Comienzo
+	3		1		1200	// Comienzo
 	4		1		5		// Fin
 	5		0		0		// Fin del Ciclo
 end
@@ -65,9 +65,9 @@ end
 //	Parte 		Condicion 	Valor 		Mensaje
 5
 	0		0		0		// Ninguna
-	1		1		21600		// Revitalizacion
+	1		1		21600	// Revitalizacion
 	2		1		300		// Notificacion
-	3		1		2220		// Fin
+	3		1		2220	// Fin
 	4		1		180		// Notificacion
 	5		1		5		// Fin
 end
